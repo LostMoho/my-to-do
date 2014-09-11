@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8" />
+    <title>
+        Main
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/montage-serialization">{"owner":{"properties":{"element":{"#":"main"}}},"actionEventListener":{"prototype":"montage/core/event/action-event-listener","properties":{"action":"addContent","handler":{"@":"rangeController"}},"_dev":{"isHidden":true}},"badge":{"prototype":"digit/ui/badge.reel","properties":{"element":{"#":"badge"}},"bindings":{"value":{"<-":"@rangeController.organizedContent.filter{!completed}.length"}}},"button":{"prototype":"digit/ui/button.reel","properties":{"element":{"#":"button"},"enabled":true,"label":"New Task"},"listeners":[{"type":"action","useCapture":true,"listener":{"@":"actionEventListener"}}]},"list":{"prototype":"digit/ui/list.reel","properties":{"element":{"#":"list"},"contentController":{"@":"rangeController"}}},"rangeController":{"prototype":"montage/core/range-controller"},"task1":{"prototype":"ui/task.reel","properties":{"element":{"#":"task1"}},"bindings":{"task":{"<-":"@list:iteration.object"}}},"title":{"prototype":"digit/ui/title.reel","properties":{"element":{"#":"title"},"value":"Things To Do"}}}</script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <h1 data-montage-id="title"></h1>
+        <button data-montage-id="button"></button>
+        <output data-montage-id="badge"></output>
+        <ul data-montage-id="list">
+            <li data-montage-id="task1"></li>
+        </ul>
+    </div>
+
+</body></html>
